@@ -75,7 +75,7 @@ I would like to express my sincere gratitude to Dr. Bagus Santoso for his invalu
 - **Multimedia-Security Lab** [Oohama-Santoso Laboratory](http://www.osmulti.cei.uec.ac.jp/index.php)
 
 ### Dr. Robert Kübler
- would like to acknowledge the significant contributions of Dr. Robert Kübler to this research project. His pioneering work in the field has served as a foundation for many aspects of this study. The insights and methodologies developed by Dr. Kübler have provided valuable guidance and inspiration throughout the research process.
+ I would like to acknowledge the significant contributions of Dr. Robert Kübler to this research project. His pioneering work in the field has served as a foundation for many aspects of this study. The insights and methodologies developed by Dr. Kübler have provided valuable guidance and inspiration throughout the research process.
 
 I would also like to express my deep appreciation to Dr. Kübler for his personal support and assistance. His expertise in deriving a threshold for confirming the correct secret has been immensely helpful in ensuring the accuracy and reliability of our findings. I am grateful for his generous guidance and the time he has devoted to enriching this research.
 
