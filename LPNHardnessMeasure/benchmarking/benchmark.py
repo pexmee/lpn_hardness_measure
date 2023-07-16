@@ -227,7 +227,7 @@ class LPNBenchmark:
         dim: int,
         sample_amount: int,
         classifier: ClassifierType,
-    ) -> Dict[str, Dict[str, str]]:
+    ) -> Dict[str, str]:
         """
         Performs benchmarking on a specific classifier.
 
@@ -280,15 +280,13 @@ class LPNBenchmark:
             )
             gc.collect()
 
-        result[f"({sample_amount},{dim})"] = {
-            "n_success": n_success,
+        result = {
+            "sample_amount": sample_amount,
+            "dim": dim,
             "n_failure": n_failure,
             "error_rate": error_rate,
             "total_duration": total_duration,
         }
-        # result[
-
-        # ] = f"({n_success},{n_failure},{error_rate},{total_duration})"
         log_memory_usage(
             "benchmark_classifier generating samples and predictions (end)"
         )
