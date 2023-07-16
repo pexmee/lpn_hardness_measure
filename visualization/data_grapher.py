@@ -1,5 +1,4 @@
 import json
-from ast import literal_eval as make_tuple
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -62,20 +61,17 @@ with open(JSON_FILE) as json_file:
 
         for model, entries in json_data.items():
             for entry in entries:
-                for key, value in entry.items():
-                    sample_amount, secret_length = make_tuple(key)
-                    num_success, num_failures, error_rate, duration = make_tuple(value)
-
+                for key, data in entry.items():
                     model = translate_model(model)
                     df_list.append(
                         {
                             "Model": model,
-                            "Sample amount": sample_amount,
-                            "Secret length": secret_length,
-                            "# Secrets Found": num_success,
-                            "# Failures": num_failures,
-                            "Error rate (%)": error_rate * 100,
-                            "Duration": duration,
+                            "Sample amount": data["sample_amount"],
+                            "Secret length": data["secret_length"],
+                            "# Secrets Found": data["num_success"],
+                            "# Failures": data["num_failures"],
+                            "Error rate (%)": data["error_rate"] * 100,
+                            "Duration": data["duration"],
                         }
                     )
 
