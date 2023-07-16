@@ -69,13 +69,21 @@ Please [open an issue](https://github.com/yourgithubusername/your-repo-name/issu
 
 ## Credits
 ### Dr. Bagus Santoso
+I would like to express my sincere gratitude to Dr. Bagus Santoso for his invaluable guidance, support, and mentorship throughout this research project. Dr. Santoso's expertise and insights have been instrumental in shaping the direction and quality of this work. His dedication and commitment have been a constant source of inspiration. I am deeply grateful for the opportunity to learn from him and for his unwavering support.
+
 - **ResearchGate**: [Bagus Santoso](https://www.researchgate.net/profile/Bagus-Santoso-3)
 - **Multimedia-Security Lab** [Oohama-Santoso Laboratory](http://www.osmulti.cei.uec.ac.jp/index.php)
 
 ### Dr. Robert Kübler
+ would like to acknowledge the significant contributions of Dr. Robert Kübler to this research project. His pioneering work in the field has served as a foundation for many aspects of this study. The insights and methodologies developed by Dr. Kübler have provided valuable guidance and inspiration throughout the research process.
+
+I would also like to express my deep appreciation to Dr. Kübler for his personal support and assistance. His expertise in deriving a threshold for confirming the correct secret has been immensely helpful in ensuring the accuracy and reliability of our findings. I am grateful for his generous guidance and the time he has devoted to enriching this research.
+
 - **LinkedIn**: [Robert Kübler](https://www.linkedin.com/in/robert-kuebler/)
 - **Work**: [Time-memory trade-offs for the learning parity with noise problem](https://hss-opus.ub.ruhr-uni-bochum.de/opus4/frontdoor/index/index/docId/5940)
 ### Jay Sinha
+I would like to extend my gratitude to Jay Sinha for his insightful blog on implementing the LPN problem in Python using the sci-kit learn library. His blog has provided valuable guidance and a clear understanding of the practical implementation aspects of the LPN problem.
+
 - **Blog**: [Solving the LPN problem with Machine Learning](https://blog.jaysinha.me/solving-lpn-problem-with-machine-learning/)
 
 ## Enhancing Project Performance through Rewriting and GPU Utilization
