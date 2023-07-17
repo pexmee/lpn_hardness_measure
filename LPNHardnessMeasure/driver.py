@@ -17,7 +17,7 @@ def driver():
 
     # Define classifiers to be benchmarked
     classifiers = {
-        "Decision Trees Classifier": ExtraTreesClassifier,
+        "Extra Trees Classifier": ExtraTreesClassifier,
         "Random Forest Classifier": RandomForestClassifier,
         "Decision Tree Classifier": DecisionTreeClassifier,
     }

@@ -41,13 +41,18 @@ pip install -r requirements.txt
 ## Usage
 
 This is a brief overview of how to use the project. 
-1. Navigate into LPNHardnessMeasure
+1. Add your configuration to resources/config.json
+2. Navigate into LPNHardnessMeasure
 ```sh
 cd LPNHardnessMeasure
 ```
-2. Run driver.py
+3. Run driver.py
 ```sh
 python driver.py
+```
+4. To get visual representation of data, run visualization/data_grapher.py
+```sh
+python data_grapher.py
 ```
 
 To run the tests (make sure it is run from inside the LPNHardnessMeasure folder):
