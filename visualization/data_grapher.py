@@ -68,7 +68,7 @@ with open(JSON_FILE) as json_file:
                         "Model": model,
                         "Sample amount": entry["sample_amount"],
                         "Secret length": entry["dim"],
-                        # "# Secrets Found": entry["n_success"],
+                        "# Secrets Found": entry["n_success"],
                         "# Failures": entry["n_failure"],
                         "Error rate (%)": entry["error_rate"] * 100,
                         "Duration": entry["total_duration"],
