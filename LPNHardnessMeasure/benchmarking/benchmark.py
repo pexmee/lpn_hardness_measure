@@ -283,6 +283,7 @@ class LPNBenchmark:
         result = {
             "sample_amount": sample_amount,
             "dim": dim,
+            "n_success": n_success,
             "n_failure": n_failure,
             "error_rate": error_rate,
             "total_duration": total_duration,

@@ -62,19 +62,18 @@ with open(JSON_FILE) as json_file:
 
         for model, entries in json_data.items():
             for entry in entries:
-                for key, data in entry.items():
-                    model = translate_model(model)
-                    df_list.append(
-                        {
-                            "Model": model,
-                            "Sample amount": data["sample_amount"],
-                            "Secret length": data["secret_length"],
-                            "# Secrets Found": data["num_success"],
-                            "# Failures": data["num_failures"],
-                            "Error rate (%)": data["error_rate"] * 100,
-                            "Duration": data["duration"],
-                        }
-                    )
+                model = translate_model(model)
+                df_list.append(
+                    {
+                        "Model": model,
+                        "Sample amount": entry["sample_amount"],
+                        "Secret length": entry["dim"],
+                        # "# Secrets Found": entry["n_success"],
+                        "# Failures": entry["n_failure"],
+                        "Error rate (%)": entry["error_rate"] * 100,
+                        "Duration": entry["total_duration"],
+                    }
+                )
 
 df = pd.DataFrame(df_list)
 # sns.lmplot(x="Secret length", y="Duration", hue="Model", data=df)
