@@ -7,6 +7,12 @@ from matplotlib.ticker import FuncFormatter
 
 JSON_FILE = "../resources/data.json"
 
+TRANSLATIONS = {
+    "dt": "Decision Trees Classifier",
+    "rf": "Random Forest Classifier",
+    "et": "Extra Trees Classifier",
+}
+
 
 def translate_model(model: str) -> str:
     """
@@ -24,12 +30,7 @@ def translate_model(model: str) -> str:
     if len(model) != 2:
         return model
 
-    kv = {
-        "dt": "Decision Trees Classifier",
-        "rf": "Random Forest Classifier",
-        "et": "Extra Trees Classifier",
-    }
-    return kv[model]
+    return TRANSLATIONS[model]
 
 
 def format_tick(value, tick_number):

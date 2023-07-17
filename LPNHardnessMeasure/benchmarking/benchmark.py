@@ -227,7 +227,7 @@ class LPNBenchmark:
         dim: int,
         sample_amount: int,
         classifier: ClassifierType,
-    ) -> Dict[str, Union[int,float]]:
+    ) -> Dict[str, Union[int, float]]:
         """
         Performs benchmarking on a specific classifier.
 
@@ -254,7 +254,7 @@ class LPNBenchmark:
         threshhold = (
             (1 + self.calculate_eps(sample_amount, error_rate)) * sample_amount * p
         )
-        result: Dict[str, Union[int,float]] = {}
+        result: Dict[str, Union[int, float]] = {}
 
         total_duration = 0.0
         for _ in range(self.config.amount_of_secrets):
