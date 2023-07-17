@@ -7,31 +7,6 @@ from matplotlib.ticker import FuncFormatter
 
 JSON_FILE = "../resources/data.json"
 
-TRANSLATIONS = {
-    "dt": "Decision Trees Classifier",
-    "rf": "Random Forest Classifier",
-    "et": "Extra Trees Classifier",
-}
-
-
-def translate_model(model: str) -> str:
-    """
-    Translates a two-letter string to the full classifier model name.
-
-    Args:
-        model (str): A two-letter representation of a classifier model.
-
-    Returns:
-        str: The full name of the classifier model.
-
-    Raises:
-        KeyError: If the two-letter model name is not recognized.
-    """
-    if len(model) != 2:
-        return model
-
-    return TRANSLATIONS[model]
-
 
 def format_tick(value, tick_number):
     """
@@ -62,7 +37,6 @@ with open(JSON_FILE) as json_file:
 
         for model, entries in json_data.items():
             for entry in entries:
-                model = translate_model(model)
                 df_list.append(
                     {
                         "Model": model,

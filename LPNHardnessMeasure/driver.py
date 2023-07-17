@@ -17,11 +17,10 @@ def driver():
 
     # Define classifiers to be benchmarked
     classifiers = {
-        "dt": ExtraTreesClassifier,
-        "rf": RandomForestClassifier,
-        "et": DecisionTreeClassifier,
+        "Decision Trees Classifier": ExtraTreesClassifier,
+        "Random Forest Classifier": RandomForestClassifier,
+        "Decision Tree Classifier": DecisionTreeClassifier,
     }
-
     benchmarker = LPNBenchmark(classifiers)
     benchmarker.run_parallel_benchmarks()
 
